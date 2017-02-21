@@ -1,0 +1,5 @@
+C:\Users\tjalters\Documents\Visual Studio 2015\Projects\Lemonadestand\Lemonadestand\bin\Release\Lemonadestand.exe.config
+C:\Users\tjalters\Documents\Visual Studio 2015\Projects\Lemonadestand\Lemonadestand\bin\Release\Lemonadestand.exe
+C:\Users\tjalters\Documents\Visual Studio 2015\Projects\Lemonadestand\Lemonadestand\bin\Release\Lemonadestand.pdb
+C:\Users\tjalters\Documents\Visual Studio 2015\Projects\Lemonadestand\Lemonadestand\obj\Release\Lemonadestand.exe
+C:\Users\tjalters\Documents\Visual Studio 2015\Projects\Lemonadestand\Lemonadestand\obj\Release\Lemonadestand.pdb
