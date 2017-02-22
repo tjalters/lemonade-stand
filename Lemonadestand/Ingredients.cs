@@ -21,10 +21,10 @@ namespace Lemonadestand
 
         public Ingredients()
         {
-            lemons = new Lemons();
-            cups = new Cups();
-            sugar = new Sugar();
-            ice = new Ice();
+            //lemons = new Lemons();
+            //cups = new Cups();
+            //sugar = new Sugar();
+            //ice = new Ice();
         }
 
         public virtual void PurchaseIngredient()

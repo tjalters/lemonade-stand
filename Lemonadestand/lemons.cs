@@ -29,7 +29,7 @@ namespace Lemonadestand
                     break;
                 case 1:
                     Console.WriteLine("selected 10 lemons for $1");
-                    amountOfIngredient = "10 lemons";
+                    //amountOfIngredient = 10;
                     break;
                 case 2:
                     Console.WriteLine("selected 25 lemons for $2");

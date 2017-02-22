@@ -8,12 +8,19 @@ namespace Lemonadestand
 {
     public class Inventory
     {
-        public Ingredients ingredients;
-
+        List<Lemons> lemons;
+        List<Cups> cups;
+        List<Sugar> sugar;
+        List<Ice> ice;
+ 
 
         public Inventory()
         {
-            ingredients = new Ingredients();
+            lemons = new List<Lemons>();
+            cups = new List<Cups>();
+            sugar = new List<Sugar>();
+            ice = new List<Ice>();
+            //create list of each ingredient
         }
 
     }
