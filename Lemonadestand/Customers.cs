@@ -8,6 +8,12 @@ namespace Lemonadestand
 {
     public class Customers
     {
+        public int dailyDemand;
 
+
+        public Customers()
+        {
+            //can I use interface?
+        } 
     }
 }
