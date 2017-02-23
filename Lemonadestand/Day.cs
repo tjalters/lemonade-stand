@@ -62,7 +62,7 @@ namespace Lemonadestand
             }
             Random getRandomTemp = new Random();
             this.randomTemperature = getRandomTemp.Next(60, 100);
-            Console.WriteLine("The forecast is " + this.randomForecast);
+            Console.WriteLine("The forecast is " + this.randomForecast + "with an estimated temperature of " +this.randomTemperature);
             //Console.WriteLine("The estimated temperature for today is" + this.randomTemperature);
         }
     }

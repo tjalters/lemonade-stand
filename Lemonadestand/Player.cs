@@ -103,5 +103,13 @@ namespace Lemonadestand
                 wallet.SubtractFromBalance(4);
             }
         }
+
+        public void TellPlayerToPickIngredients()
+        {
+            Console.WriteLine("Now that you have purchased your ingredients, it is time to chose how you want to make your lemonade.");
+            Console.WriteLine("For reference, a normal amount of each ingredient per pitcher is 4 lemons, 4 cups of sugar, and 20 ice cubes.");
+            Console.WriteLine("It's your lemonade stand though, so you can choose how many of each ingredient that you want per pitcher.");
+            Console.WriteLine("Remember that too much or too little of each ingredient could turn off certain customers from buying a cup of lemonade.");
+        }
     }
 }

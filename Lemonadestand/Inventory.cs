@@ -8,6 +8,8 @@ namespace Lemonadestand
 {
     public class Inventory
     {
+        public Ingredients ingredients;
+
         List<Lemon> lemon;
         List<Cups> cups;
         List<Sugar> sugar;
@@ -17,12 +19,15 @@ namespace Lemonadestand
 
         public Inventory()
         {
+            ingredients = new Ingredients();
+
             lemon = new List<Lemon>();
             cups = new List<Cups>();
             sugar = new List<Sugar>();
             ice = new List<Ice>();
             //create list of each ingredient
-
+            //to get recipe = player.inventory.ingredients
+            //create list that stores each ingredient
 
             List<int> lemons = new List<int>() { 0, 10, 25, 50, 80 };
 
