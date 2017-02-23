@@ -11,6 +11,15 @@ namespace Lemonadestand
         public Wallet wallet;
         public Inventory inventory;
         public Store store;
+        public int number;
+        public int numberOfLemons;
+        public int numberOfCups;
+        public int cupsOfSugar;
+        public int iceCubes;
+        public int getNumberOfLemons;
+        public int storedLemons;
+        public int lemons;
+        public int amountLemonsPerPitcher;
 
 
 
@@ -26,6 +35,7 @@ namespace Lemonadestand
             if (store.numberOfLemons == 10)
             {
                 wallet.SubtractFromBalance(1);
+                inventory.AddLemonsToInventory(store.numberOfLemons);
             }
             if (store.numberOfLemons == 25)
             {
@@ -110,6 +120,16 @@ namespace Lemonadestand
             Console.WriteLine("For reference, a normal amount of each ingredient per pitcher is 4 lemons, 4 cups of sugar, and 20 ice cubes.");
             Console.WriteLine("It's your lemonade stand though, so you can choose how many of each ingredient that you want per pitcher.");
             Console.WriteLine("Remember that too much or too little of each ingredient could turn off certain customers from buying a cup of lemonade.");
+        }
+      
+        
+        public void AddCupsSugarToPitcher()
+        {
+            Console.WriteLine("How many cups of sugar would you like to put in each pitcher?");
+        }
+        public void AddIceToPitcher()
+        {
+            Console.WriteLine("How many ice cubes would you like to put in each pitcher?");
         }
     }
 }

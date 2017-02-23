@@ -15,6 +15,7 @@ namespace Lemonadestand
 
         public int choice;
         public int numberOfLemons;
+      
 
 
 
@@ -27,14 +28,19 @@ namespace Lemonadestand
             //ice = new Ice();
         }
 
-        public virtual void PurchaseIngredient()
-        {
+        //public virtual void PurchaseIngredient()
+        //{
 
-        }
+        //}
 
         public void GetIngredients()
         {
             Console.WriteLine("Now it is time to select how much you want to spend on each ingredient.");
         }
+        public void AddLemonsToPitcher()
+        {
+            Console.WriteLine("How many lemons would you like to put in each pitcher today?");
+        }
+       // int lemonsAdded = int.Parse(Console.ReadLine());
     }
 }

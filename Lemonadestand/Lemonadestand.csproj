@@ -49,6 +49,7 @@
     <Compile Include="..\..\..\..\..\Desktop\%3bemonadestand\Program.cs">
       <Link>Program.cs</Link>
     </Compile>
+    <Compile Include="Athletes.cs" />
     <Compile Include="Cups.cs" />
     <Compile Include="Customers.cs" />
     <Compile Include="Day.cs" />

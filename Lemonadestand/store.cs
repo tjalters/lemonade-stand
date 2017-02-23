@@ -8,16 +8,22 @@ namespace Lemonadestand
 {
     public class Store
     {
-        public int number;
+        public Inventory inventory;
+        private int number;
         public int numberOfLemons;
         public int numberOfCups;
         public int cupsOfSugar;
         public int iceCubes;
+        public int lemons;
+        public int cups;
+        public int sugar;
+        public int ice;
+        public int lemonsAddedToInventory;
         public Store()
         {
-           
+            inventory = new Inventory();
         }
-        //public int GetNumberOfLemons()
+        //public int getNumberOfLemons()
         //{
           //  Console.WriteLine("How many lemons?");
 
@@ -28,14 +34,7 @@ namespace Lemonadestand
               //  return lemonsAmount;
         //}
 
-        //public void SetLemonsInInventory(Player player, int lemons)
-        //{
-            //for (int i = 0; i < lemonsAmount: i++)
-            //{
-              //  Lemon lemon = new Lemon;
-            //    player.inventory.lemons.Add(lemons);
-          //  }
-        //}
+       
         public void BuyLemons()
         {
             Console.WriteLine("How many lemons do you want to buy? Type 0 to purchase none, 1 to purchase 10 for $1, 2 to purchase 25 for $2, 3 to purchase 50 for $3, or 4 to purhase 80 for $4.");
