@@ -8,7 +8,7 @@ namespace Lemonadestand
 {
     public class Wallet
     {
-        decimal balance;
+        public decimal balance;
 
 
         public Wallet()
@@ -20,11 +20,14 @@ namespace Lemonadestand
             if (balance - amountToSubtract >= 0)
             {
                 balance -= amountToSubtract;
+
+                return true;
             }
-            return true;
+            else
             {
-                //return false;
+                return false;
             }
+            
         }
 
         public void AddToBalance(decimal amount)

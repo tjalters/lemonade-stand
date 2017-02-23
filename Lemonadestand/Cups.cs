@@ -26,23 +26,23 @@ namespace Lemonadestand
             {
                 case 0:
                     Console.WriteLine("Selected 0 cups for $0");
-                    amountOfIngredient = "0 cups";
+                    //amountOfIngredient = "0 cups";
                     break;
                 case 1:
                     Console.WriteLine("selected 30 cups for $1");
-                    amountOfIngredient = "30 cups";
+                    //amountOfIngredient = "30 cups";
                     break;
                 case 2:
                     Console.WriteLine("selected 60 cups for $2");
-                    amountOfIngredient = "60 cups";
+                    //amountOfIngredient = "60 cups";
                     break;
                 case 3:
                     Console.WriteLine("selected 100 cups for $3");
-                    amountOfIngredient = "100 cups";
+                    //amountOfIngredient = "100 cups";
                     break;
                 case 4:
                     Console.WriteLine("selected 150 cups for $4");
-                    amountOfIngredient = "150 cups";
+                    //amountOfIngredient = "150 cups";
                     break;
                 default:
                     Console.WriteLine("Not a valid choice.");

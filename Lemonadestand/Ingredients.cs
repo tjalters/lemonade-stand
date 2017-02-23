@@ -8,13 +8,13 @@ namespace Lemonadestand
 {
     public class Ingredients
     {
-        public Lemons lemons;
+        public Lemon lemons;
         public Cups cups;
         public Sugar sugar;
         public Ice ice;
 
         public int choice;
-        public string amountOfIngredient;
+        public int numberOfLemons;
 
 
 

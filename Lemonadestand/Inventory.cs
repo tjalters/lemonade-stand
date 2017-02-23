@@ -8,20 +8,29 @@ namespace Lemonadestand
 {
     public class Inventory
     {
-        List<Lemons> lemons;
+        List<Lemon> lemon;
         List<Cups> cups;
         List<Sugar> sugar;
         List<Ice> ice;
- 
+
+
 
         public Inventory()
         {
-            lemons = new List<Lemons>();
+            lemon = new List<Lemon>();
             cups = new List<Cups>();
             sugar = new List<Sugar>();
             ice = new List<Ice>();
             //create list of each ingredient
-        }
 
+
+            List<int> lemons = new List<int>() { 0, 10, 25, 50, 80 };
+
+            foreach (int number in lemons)
+            {
+                Console.WriteLine(number + " lemons selected");
+            }
+
+        }
     }
 }
