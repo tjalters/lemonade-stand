@@ -17,6 +17,11 @@ namespace Lemonadestand
         public string randomForecast;
         public int randomWeather;
         public int randomTemperature;
+        public double demandLevel;
+        public double temperature;
+        public string weatherFactor;
+        public double sunnyFactor = 1.0;
+
       
 
         public Day()

@@ -11,9 +11,11 @@ namespace Lemonadestand
         public Ingredients ingredients;
         public Store store;
         public int storedLemons;
-        private int number;
+        public int number;
         public int amountLemonsPerPitcher;
-
+        public int amountCupsSugarPerPitcher;
+        public int amountOfIceCubesPerPitcher;
+        public int numberOfCups;
         List<Lemon> lemon;
         List<Cups> cups;
         List<Sugar> sugar;
@@ -25,7 +27,7 @@ namespace Lemonadestand
         {
             ingredients = new Ingredients();
             //store = new Store();
-            
+
 
             lemon = new List<Lemon>();
             cups = new List<Cups>();
@@ -42,86 +44,46 @@ namespace Lemonadestand
 
             //foreach (int number in numbers)
             //{
-              // Console.WriteLine(number);
+            // Console.WriteLine(number);
             //}
 
         }
 
         //public double TotalLemonsInInventory(int storedLemons, int numberOfLemons)
         //{
-            //lemons = storedLemons;
-            //addedLemons = numberofLemons;
-            //result = lemons + addedLemons;
-            //return result;
+        //lemons = storedLemons;
+        //addedLemons = numberofLemons;
+        //result = lemons + addedLemons;
+        //return result;
 
         //}
 
-        
+
         public void AddLemonsToInventory(int numberOfLemons)
         {
             for (int i = 0; i < numberOfLemons; i++)
             {
                 List<Lemon> lemon = new List<Lemon>();
-               
+
             }
         }
-        public void AddCupsToInventory()
+        public void AddCupsToInventory(int numberOfCups)
         {
-
-        }
-        public void AddCupsSugarToInventory()
-        {
-
-        }
-        public void AddIceToInventory()
-        {
-
-        }
-        public void RemoveLemonsFromInventory()
-        {
-
-        }
-        public void RemoveCupsFromInventory()
-        {
-
-        }
-        public void AddLemonsToPitcher()
-        {
-            Console.WriteLine("How many lemons would you like to put in each pitcher? You must use at least 2 lemons and you can not use more than 6 lemons.");
-            number = int.Parse(Console.ReadLine());
-
-            switch (number)
+            for (int i = 0; i < numberOfCups; i++)
             {
-                case 2:
-                    Console.WriteLine("Selected 2 lemons.");
-                    amountLemonsPerPitcher = 2;
-                    break;
-                case 3:
-                    Console.WriteLine("Selected 3 lemons.");
-                    amountLemonsPerPitcher = 3;
-                    break;
-                case 4:
-                    Console.WriteLine("Selected 4 lemons.");
-                    amountLemonsPerPitcher = 4;
-                    break;
-                case 5:
-                    Console.WriteLine("Selected 5 lemons.");
-                    amountLemonsPerPitcher = 5;
-                    break;
-                case 6:
-                    Console.WriteLine("Selected 6 lemons.");
-                    amountLemonsPerPitcher = 6;
-                    break;
-                default:
-                    Console.WriteLine("Not a valid entry");
-                    break;
-
-
+                List<Cups> cups = new List<Cups>();
             }
-            
-
-            //int amountLemons = int.Parse(Console.ReadLine());
         }
+        public void AddCupsSugarToInventory(int cupsOfSugar)
+        {
+            for (int i = 0; i < cupsOfSugar; i++)
+            {
+                List<Sugar> sugar = new List<Sugar>();
+            }
+        }
+
+
+    
 
     }
 }

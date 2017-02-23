@@ -8,7 +8,9 @@ namespace Lemonadestand
 {
     public class Customers
     {
-        public int dailyDemand;
+        public double demandLevel;
+        public int amountOfIceCubesPerPitcher;
+
 
 
         public Customers()
