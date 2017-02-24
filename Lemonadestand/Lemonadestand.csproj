@@ -54,6 +54,7 @@
     <Compile Include="Cups.cs" />
     <Compile Include="Customers.cs" />
     <Compile Include="Day.cs" />
+    <Compile Include="Healthy.cs" />
     <Compile Include="Ice.cs" />
     <Compile Include="Ingredients.cs" />
     <Compile Include="Inventory.cs" />
@@ -66,6 +67,7 @@
     <Compile Include="Stingy.cs" />
     <Compile Include="Store.cs" />
     <Compile Include="Sugar.cs" />
+    <Compile Include="SunnyCustomers.cs" />
     <Compile Include="Sweettooth.cs" />
     <Compile Include="Wallet.cs" />
   </ItemGroup>

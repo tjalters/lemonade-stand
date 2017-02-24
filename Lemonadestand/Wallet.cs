@@ -15,11 +15,11 @@ namespace Lemonadestand
         {
             balance = 20.00m;
         }
-        public decimal SubtractFromBalance(decimal amountToSubtract)
+        public void SubtractFromBalance(decimal amountToSubtract)
         {
             if (balance - amountToSubtract >= 0)
             {
-               return balance -= amountToSubtract;
+                balance -= amountToSubtract;
 
                 
             }

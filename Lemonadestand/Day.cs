@@ -16,6 +16,7 @@ namespace Lemonadestand
         public int currentDay;
         public string randomForecast;
         public int randomWeather;
+        public int realWeather;
         public int randomTemperature;
         public double demandLevel;
         public double temperature;
@@ -37,7 +38,7 @@ namespace Lemonadestand
             Console.WriteLine("Day {0}", day++);
         }
 
-        public void DisplayRandomDailyForcast()
+        public void DisplayRandomDailyWeather()
         {
             //List<string> myList = new List<string> { "sunny", "cloudy", "rainy", "storming" };
 
@@ -69,11 +70,36 @@ namespace Lemonadestand
             }
             Random getRandomTemp = new Random();
             this.randomTemperature = getRandomTemp.Next(60, 100);
-            Console.WriteLine("The forecast is " + this.randomForecast + "with an estimated temperature of " +this.randomTemperature);
+            Console.WriteLine("The estimated forecast is " + this.randomForecast + "with an estimated temperature of " +this.randomTemperature);
             //Console.WriteLine("The estimated temperature for today is" + this.randomTemperature);
+        }
+        public void DisplayRealDailyWeather()
+        {
+            Random realForecast = new Random();
+            int assignRealForecast = realForecast.Next(1, 4);
+            if (realWeather == 1)
+            {
+                this.realForecast = "sunny";
+            }
+            else if (assignRealForecast == 2)
+            {
+                this.realForecast = "cloudy";
+            }
+            else if (assignRealForecast == 3)
+            {
+                this.realForecast = "rainy";
+            }
+            else
+            {
+                this.realForecast = "storming";
+            }
+            Random getRealTemperature = new Random();
+            this.realTemperature = getRealTemperature.Next(60, 100);
+            Console.WriteLine("The forecast is " + this.realForecast + "with a temperature of " + this.realTemperature);
         }
         public void DisplayInventoryEndOfDay()
         {
+            //lemons in inventory before day - lemons in inventory after day = new lemons inventory number
             //number of cups sold/10 
             //pitchers used for day * lemons per pitcher
             //pitchers used for day * cups of sugar per pitcher
