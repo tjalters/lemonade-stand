@@ -12,7 +12,41 @@ namespace Lemonadestand
         {
 
         }
-
+        public void BuyInstanceOneAthlete()
+        {
+            if (amountOfIceCubesPerPitcher >= 30)
+            {
+                willBuy = true;
+            }
+            else willBuy = false; //(amountOfIceCubesPerPitcher < 30)
+        }
+        public void BuyInstanceTwoAthlete()
+        {
+            if (demandLevel > 45)
+            {
+                willBuy = true;
+            }
+            else willBuy = false;
+        }
+        public void BuyInstanceThreeAthlete()
+        {
+            if (pricePerCup <= 30)
+            {
+                willBuy = true;
+            }
+            else willBuy = false;
+        }
+        public void BuyInstanceFourAthlete()
+        {
+            if (realForecast == "sunny" && pricePerCup <= 30)
+            {
+                willBuy = true;
+            }
+            else willBuy = false;
+        }
+               // willBuy = false;
+            //}
+       
         //public bool AthletesBuy(int dailyDemand)
        // {
             //if ice cubes in pitcher >= 30, then athletes buy

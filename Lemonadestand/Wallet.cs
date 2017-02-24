@@ -15,17 +15,17 @@ namespace Lemonadestand
         {
             balance = 20.00m;
         }
-        public bool SubtractFromBalance(decimal amountToSubtract)
+        public decimal SubtractFromBalance(decimal amountToSubtract)
         {
             if (balance - amountToSubtract >= 0)
             {
-                balance -= amountToSubtract;
+               return balance -= amountToSubtract;
 
-                return true;
+                
             }
             else
             {
-                return false;
+                Console.WriteLine("Insufficient funds");
             }
             
         }

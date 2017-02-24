@@ -49,6 +49,7 @@
     <Compile Include="..\..\..\..\..\Desktop\%3bemonadestand\Program.cs">
       <Link>Program.cs</Link>
     </Compile>
+    <Compile Include="Anytimers.cs" />
     <Compile Include="Athletes.cs" />
     <Compile Include="Cups.cs" />
     <Compile Include="Customers.cs" />
@@ -62,8 +63,10 @@
     <Compile Include="..\..\..\..\..\Desktop\%3bemonadestand\Weather.cs">
       <Link>Weather.cs</Link>
     </Compile>
+    <Compile Include="Stingy.cs" />
     <Compile Include="Store.cs" />
     <Compile Include="Sugar.cs" />
+    <Compile Include="Sweettooth.cs" />
     <Compile Include="Wallet.cs" />
   </ItemGroup>
   <ItemGroup>

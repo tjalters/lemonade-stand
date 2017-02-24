@@ -21,6 +21,8 @@ namespace Lemonadestand
         public double temperature;
         public string weatherFactor;
         public double sunnyFactor = 1.0;
+        public double realTemperature;
+        public string realForecast;
 
       
 
@@ -69,6 +71,26 @@ namespace Lemonadestand
             this.randomTemperature = getRandomTemp.Next(60, 100);
             Console.WriteLine("The forecast is " + this.randomForecast + "with an estimated temperature of " +this.randomTemperature);
             //Console.WriteLine("The estimated temperature for today is" + this.randomTemperature);
+        }
+        public void DisplayInventoryEndOfDay()
+        {
+            //number of cups sold/10 
+            //pitchers used for day * lemons per pitcher
+            //pitchers used for day * cups of sugar per pitcher
+            //cups leftover from day keep in inventory
+            //ice leftover from day == 0 ice
+        }
+        public void DisplayCupsSoldForDay()
+        {
+
+        }
+        public void DisplayNetProfitForDay()
+        {
+            //cups sold * price per cup
+        }
+        public void DisplayRemainingBalance()
+        {
+
         }
     }
 }
