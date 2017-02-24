@@ -9,7 +9,8 @@ namespace Lemonadestand
     public class Inventory
     {
         public Ingredients ingredients;
-        public Store store;
+        
+        
         public int storedLemons;
         public int number;
         public int amountLemonsPerPitcher;
@@ -94,6 +95,7 @@ namespace Lemonadestand
         {
             for (int i = 0; i > numberOfLemons; i++)
             {
+                List<Lemon> lemon = new List<Lemon>();
                 lemon.RemoveAt(0);
             }
         }
@@ -101,6 +103,7 @@ namespace Lemonadestand
         {
             for (int i = 0; i > numberOfCups; i++)
             {
+                List<Cups> cups = new List<Cups>();
                 cups.RemoveAt(0);
             }
         }
@@ -108,7 +111,16 @@ namespace Lemonadestand
         {
             for (int i = 0; i > cupsOfSugar; i++)
             {
+                List<Sugar> sugar = new List<Sugar>();
                 sugar.RemoveAt(0);
+            }
+        }
+        public void RemoveIceFromInventory(int iceCubes)
+        {
+            for (int i = 0; i > iceCubes; i++)
+            {
+                List<Ice> ice = new List<Ice>();
+                ice.RemoveAt(0);
             }
         }
 

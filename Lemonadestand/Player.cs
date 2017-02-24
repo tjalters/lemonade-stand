@@ -30,10 +30,10 @@ namespace Lemonadestand
         {
             wallet = new Wallet();
             inventory = new Inventory();
-            store = new Store();
+            
         }
 
-        public void DisplayLemonsBought()
+        public void PurchaseLemons(Store store)
         {
             if (store.numberOfLemons == 10)
             {
@@ -61,7 +61,7 @@ namespace Lemonadestand
         {
             Console.WriteLine("Remaining balance is " + wallet.balance);
         }
-        public void DisplayCupsBought()
+        public void PurchaseCups(Store store)
         {
             if (store.numberOfCups == 30)
             {
@@ -84,7 +84,7 @@ namespace Lemonadestand
                 inventory.AddCupsToInventory(store.numberOfCups);
             }
          }
-        public void DisplayCupsOfSugarBought()
+        public void PurchaseSugar(Store store)
         {
             if (store.cupsOfSugar == 15)
             {
@@ -108,7 +108,7 @@ namespace Lemonadestand
             }
 
         }
-        public void DisplayIceCubesBought()
+        public void PurchaseIce(Store store)
         {
             if (store.iceCubes == 100)
             {
@@ -136,10 +136,7 @@ namespace Lemonadestand
             Console.WriteLine("Remember that too much or too little of each ingredient could turn off certain customers from buying a cup of lemonade.");
         }
 
-        public void AddIceToInventory()
-        {
-
-        }
+       
     
         public void AddLemonsToPitcher()
         {

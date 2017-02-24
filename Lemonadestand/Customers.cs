@@ -8,6 +8,7 @@ namespace Lemonadestand
 {
     public class Customers
     {
+        public List<Customers> customers;
         public double demandLevel;
         public int amountOfIceCubesPerPitcher;
         public int amountCupsSugarPerPitcher;
@@ -21,18 +22,19 @@ namespace Lemonadestand
         public Customers()
         {
             //can I use
-        } 
-       
-            //public bool AthletesBuy(int dailyDemand)
-            // {
-            //if ice cubes in pitcher >= 30, then athletes buy
-            //if dailyDemand >45, then athletes buy
-            //if dailyDemand =<45, then athletes don't buy
-            //if price =<25 cents, then athletes buy
-            //if(public int amountOfIceCubesPerPitcher >= 30);
-            //}
+        }
+
+        //public bool AthletesBuy(int dailyDemand)
+        // {
+        //if ice cubes in pitcher >= 30, then athletes buy
+        //if dailyDemand >45, then athletes buy
+        //if dailyDemand =<45, then athletes don't buy
+        //if price =<25 cents, then athletes buy
+        //if(public int amountOfIceCubesPerPitcher >= 30);
+        //}
         public void BuyCup(Player player)
         {
+            customers = new List<Customers>();
             player.wallet.balance += pricePerCup;
             player.inventory.cups.RemoveAt(0);
         }

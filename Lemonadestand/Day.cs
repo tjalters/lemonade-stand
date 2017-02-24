@@ -10,6 +10,8 @@ namespace Lemonadestand
     {
         public List<Customers> customers;
         public Weather weather;
+        public Inventory inventory;
+        public Store store;
         public int day = 1;
         public string forcast;
         public int currentDay;
@@ -23,13 +25,17 @@ namespace Lemonadestand
         public double sunnyFactor = 1.0;
         public double realTemperature;
         public string realForecast;
+        public int amountOfCupsPerPitcher = 10;
+        public int pricePerCup;
 
-      
+        public object RemoveLemonsFromInventory { get; private set; }
 
         public Day()
         {
-            customers = new List<Customers>();
+           
             weather = new Weather();
+            customers = new List<Customers>();
+            
             //myList = new List<string>();
         }
         public void DisplayDay()
@@ -180,11 +186,27 @@ namespace Lemonadestand
             foreach(Customers customer in customers)
             {
                 customer.CheckIfWillBuy(player, weather.demandLevel);
+                customer.BuyCup(player);
             }
         }
         public void RunLemonadeStand()
         {
 
         }
-    }
+       
+       // public void MakePitcher()
+       // {
+            //for(int i = 0; i <= 0; i++)
+            //inventory.lemon.RemoveAt(0);
+            //inventory.sugar.RemoveAt(0);
+            //inventory.ice.RemoveAt(0);
+
+            
+        //}
+        
+            //public void PourPitcher(Player player)
+            //{
+            //  player.numberOfLemons.RemoveAt(0);
+         //}
+        }
 }

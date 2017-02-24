@@ -21,7 +21,7 @@ namespace Lemonadestand
         public int lemonsAddedToInventory;
         public Store()
         {
-            inventory = new Inventory();
+            
         }
         //public int getNumberOfLemons()
         //{
