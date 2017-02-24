@@ -13,19 +13,21 @@ namespace Lemonadestand
         {
 
         }
-        public void BuyInstanceOneHealthy()
+        public void BuyInstanceOneHealthy(Player player)
         {
             if (amountCupsSugarPerPitcher < 3)
             {
                 willBuy = true;
+                BuyCup(player);
             }
             else willBuy = false;
         }
-        public void BuyInstanceTwoHealthy()
+        public override void CheckIfWillBuy(Player player, double demandLevel)
         {
-            if (amountCupsSugarPerPitcher <= 3 && demandLevel >= 30 && pricePerCup <= 40)
+            if (amountCupsSugarPerPitcher <= 3 && demandLevel >= 30 && pricePerCup <= 40 && realTemperature > 90)
             {
                 willBuy = true;
+                BuyCup(player);
             }
             else willBuy = false;
         }

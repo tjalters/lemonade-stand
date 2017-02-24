@@ -18,7 +18,7 @@ namespace Lemonadestand
         public int numberOfCups;
         public decimal amountToSubtract;
         List<Lemon> lemon;
-        List<Cups> cups;
+        public List<Cups> cups;
         List<Sugar> sugar;
         List<Ice> ice;
 
@@ -65,7 +65,7 @@ namespace Lemonadestand
             for (int i = 0; i < numberOfLemons; i++)
             {
                 numberOfLemons = storedLemons;
-                storedLemons.Add();
+               // storedLemons.Add();
 
             }
         }

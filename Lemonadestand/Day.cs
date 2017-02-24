@@ -8,7 +8,7 @@ namespace Lemonadestand
 {
     public class Day
     {
-        public Customers customers;
+        public List<Customers> customers;
         public Weather weather;
         public int day = 1;
         public string forcast;
@@ -28,7 +28,7 @@ namespace Lemonadestand
 
         public Day()
         {
-            customers = new Customers();
+            customers = new List<Customers>();
             weather = new Weather();
             //myList = new List<string>();
         }
@@ -118,6 +118,66 @@ namespace Lemonadestand
 
         }
         public void GenerateCustomers()
+        {
+            GenerateHealthyCustomers();
+
+        }
+        public void GenerateHealthyCustomers()
+        {
+            for(int i = 0; i == 10; i++)
+            {
+                Healthy healthy = new Healthy();
+                customers.Add(healthy);
+            }
+        }
+        public void GenerateAthleteCustomers()
+        {
+            for(int i = 0; i == 10; i++)
+            {
+                Athletes athletes = new Athletes();
+                customers.Add(athletes);
+            }
+        }
+        public void GenerateAnytimerCustomers()
+        {
+            for(int i = 0; i == 10; i++)
+            {
+                Anytimers anytimers = new Anytimers();
+                customers.Add(anytimers);
+            }
+        }
+        public void GenerateSweetToothCustomers()
+        {
+            for(int i = 0; i == 10; i++)
+            {
+                SweetTooth sweetTooth = new SweetTooth();
+                customers.Add(sweetTooth);
+            }
+        }
+        public void GenerateSunnyCustomers()
+        {
+            for(int i = 0; i == 10; i++)
+            {
+                SunnyCustomer sunnyCustomer = new SunnyCustomer();
+                customers.Add(sunnyCustomer);
+            }
+        }
+        public void GenerateStingyCustomers()
+        {
+            for(int i = 0; i == 10; i++)
+            {
+                Stingy stingy = new Stingy();
+                customers.Add(stingy);
+            }
+        }
+        public void DetermineCustomerBuy(Player player)
+        {
+            foreach(Customers customer in customers)
+            {
+                customer.CheckIfWillBuy(player, weather.demandLevel);
+            }
+        }
+        public void RunLemonadeStand()
         {
 
         }

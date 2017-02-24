@@ -31,8 +31,15 @@ namespace Lemonadestand
             //if price =<25 cents, then athletes buy
             //if(public int amountOfIceCubesPerPitcher >= 30);
             //}
-        
+        public void BuyCup(Player player)
+        {
+            player.wallet.balance += pricePerCup;
+            player.inventory.cups.RemoveAt(0);
+        }
+        public virtual void CheckIfWillBuy(Player player, double demandLevel)
+        {
 
+        }
 
 
 
