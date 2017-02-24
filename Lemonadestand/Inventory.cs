@@ -17,10 +17,10 @@ namespace Lemonadestand
         public int amountOfIceCubesPerPitcher;
         public int numberOfCups;
         public decimal amountToSubtract;
-        List<Lemon> lemon;
+        public List<Lemon> lemon;
         public List<Cups> cups;
-        List<Sugar> sugar;
-        List<Ice> ice;
+        public List<Sugar> sugar;
+        public List<Ice> ice;
 
 
 
@@ -64,8 +64,7 @@ namespace Lemonadestand
         {
             for (int i = 0; i < numberOfLemons; i++)
             {
-                numberOfLemons = storedLemons;
-               // storedLemons.Add();
+                List<Lemon> lemons = new List<Lemon>();
 
             }
         }
@@ -80,9 +79,17 @@ namespace Lemonadestand
         {
             for (int i = 0; i < cupsOfSugar; i++)
             {
-                
+                List<Sugar> sugar = new List<Sugar>();
             }
         }
+        public void AddIceToInventory(int iceCubes)
+        {
+            for (int i = 0; i < iceCubes; i++)
+            {
+                List<Ice> ice = new List<Ice>();
+            }
+        }
+   
         public void RemoveLemonsFromInventory(int numberOfLemons)
         {
             for (int i = 0; i > numberOfLemons; i++)
