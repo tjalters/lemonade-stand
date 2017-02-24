@@ -14,11 +14,12 @@ namespace Lemonadestand
         {
 
         }
-        public void buyInstanceOneAnytimers()
+        public override void CheckIfWillBuy(Player player, double demandLevel)
         {
             if (demandLevel >= 1)
             {
                 willBuy = true;
+                BuyCup(player);
             }
             else willBuy = false;
         }

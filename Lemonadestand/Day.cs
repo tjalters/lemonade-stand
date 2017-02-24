@@ -120,6 +120,11 @@ namespace Lemonadestand
         public void GenerateCustomers()
         {
             GenerateHealthyCustomers();
+            GenerateAthleteCustomers();
+            GenerateAnytimerCustomers();
+            GenerateSweetToothCustomers();
+            GenerateSunnyCustomers();
+            GenerateStingyCustomers();
 
         }
         public void GenerateHealthyCustomers()

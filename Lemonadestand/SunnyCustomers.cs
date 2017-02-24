@@ -13,29 +13,13 @@ namespace Lemonadestand
         {
 
         }
-        public void BuyInstanceOneSunny()
+        public override void CheckIfWillBuy(Player player, double demandLevel)
         {
-            if (realForecast == "Sunny" && pricePerCup <= 45)
+            if (realForecast == "Sunny" && pricePerCup <= 45 || realTemperature > 85 && pricePerCup <= 25 || demandLevel >= 55 && realForecast == "sunny") 
             {
                 willBuy = true;
-            }
-            else willBuy = false;
-
-        }
-        public void BuyInstanceTwoSunny()
-        {
-            if (realTemperature > 85 && pricePerCup <= 25)
-            {
-                willBuy = true;
-            }
-            else willBuy = false;
-        }
-        public void BuyInstanceThreeSunny()
-        {
-            if (demandLevel >= 55 && realForecast == "sunny" || realForecast == "cloudy")
-            {
-                willBuy = true;
-            }
+                BuyCup(player);
+            } 
             else willBuy = false;
         }
         

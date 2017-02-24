@@ -12,46 +12,16 @@ namespace Lemonadestand
         {
 
         }
-        public void BuyInstanceOneSweetTooth()
+        public override void CheckIfWillBuy(Player player, double demandLevel)
         {
-            if (amountCupsSugarPerPitcher > 4 && pricePerCup <=35)
+            if (amountCupsSugarPerPitcher > 4 && pricePerCup <=35 || demandLevel > 50 && pricePerCup <= 25 || amountCupsSugarPerPitcher > 5 && pricePerCup < 60)
             {
                 willBuy = true;
+                BuyCup(player);
             }
             else willBuy = false;
         }
-        public void BuyInstanceTwoSweetTooth()
-        {
-            if (demandLevel > 50 && pricePerCup <= 25)
-            {
-                willBuy = true;
-            }
-            else willBuy = false;
-        }
-        public void BuyInstanceThreeSweetTooth()
-        {
-            if (realTemperature > 75)
-            {
-                willBuy = true;
-            }
-            else willBuy = false;
-        }
-        public void BuyInstanceFourSweetTooth()
-        {
-            if (pricePerCup <= 25)
-            {
-                willBuy = true;
-            }
-            else willBuy = false;
-        }
-        public void BuyInstanceFiveSweeth()
-        {
-            if (amountCupsSugarPerPitcher > 5 && pricePerCup < 60)
-            {
-                willBuy = true;
-            }
-            else willBuy = false;
-        }
+        
     
     }
 }
