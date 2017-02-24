@@ -9,26 +9,35 @@ namespace Lemonadestand
     public class Wallet
     {
         public decimal balance;
+        
+     
 
 
         public Wallet()
         {
             balance = 20.00m;
         }
-        public void SubtractFromBalance(decimal amountToSubtract)
-        {
+
+
+
+    public void SubtractFromBalance(decimal amountToSubtract)
+    {
             if (balance - amountToSubtract >= 0)
             {
                 balance -= amountToSubtract;
-
-                
             }
             else
             {
-                Console.WriteLine("Insufficient funds");
+                Console.WriteLine("Insufficient funds.");
             }
+    }
+      
             
-        }
+           
+               //else Console.WriteLine("Insufficient funds");
+            
+            
+        
 
         public void AddToBalance(decimal amount)
         {

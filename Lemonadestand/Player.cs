@@ -48,10 +48,12 @@ namespace Lemonadestand
             if (store.numberOfLemons == 50)
             {
                 wallet.SubtractFromBalance(3);
+                inventory.AddLemonsToInventory(store.numberOfLemons);
             }
             if (store.numberOfLemons == 80)
             {
                 wallet.SubtractFromBalance(4);
+                inventory.AddLemonsToInventory(store.numberOfLemons);
             }          
        
         }
@@ -69,14 +71,17 @@ namespace Lemonadestand
             if (store.numberOfCups == 60)
             {
                 wallet.SubtractFromBalance(2);
+                inventory.AddCupsToInventory(store.numberOfCups);
             }
             if (store.numberOfCups == 100)
             {
                 wallet.SubtractFromBalance(3);
+                inventory.AddCupsToInventory(store.numberOfCups);
             }
             if (store.numberOfCups == 150)
             {
                 wallet.SubtractFromBalance(4);
+                inventory.AddCupsToInventory(store.numberOfCups);
             }
          }
         public void DisplayCupsOfSugarBought()
@@ -89,14 +94,17 @@ namespace Lemonadestand
             if (store.cupsOfSugar == 30)
             {
                 wallet.SubtractFromBalance(2);
+                inventory.AddCupsSugarToInventory(store.cupsOfSugar);
             }
             if (store.cupsOfSugar == 50)
             {
                 wallet.SubtractFromBalance(3);
+                inventory.AddCupsSugarToInventory(store.cupsOfSugar);
             }
             if (store.cupsOfSugar == 80)
             {
                 wallet.SubtractFromBalance(4);
+                inventory.AddCupsSugarToInventory(store.cupsOfSugar);
             }
 
         }
@@ -132,14 +140,7 @@ namespace Lemonadestand
         {
 
         }
-        public void RemoveLemonsFromInventory()
-        {
-
-        }
-        public void RemoveCupsFromInventory()
-        {
-
-        }
+    
         public void AddLemonsToPitcher()
         {
             Console.WriteLine("How many lemons would you like to put in each pitcher? You must use at least 2 lemons and you can not use more than 6 lemons.");
@@ -212,15 +213,15 @@ namespace Lemonadestand
 
             }
         }
-        public void DisplayPitcher()
-        {
-            Console.WriteLine("Your pitcher contains:");
-            Console.WriteLine("{0} lemons", number);
-            Console.WriteLine("{0} cups of sugar", number);
-            Console.WriteLine("{0} ice cubes", number);
+      //  public void DisplayPitcher()
+        //{
+          //  Console.WriteLine("Your pitcher contains:");
+            //Console.WriteLine("{0} lemons", number);
+            //Console.WriteLine("{0} cups of sugar", number);
+            //Console.WriteLine("{0} ice cubes", number);
 
 
-        }
+        //}
         public void ChoosePricePerCup()
         {
             Console.WriteLine("Choose how much you want to charge your customers per cup(in cents). 10 cents is the minimum, 60 cents is the maximum. Choose in increments of 5(10, 15, 20, etc.) For context, the average amount per cup is 25 cents.");

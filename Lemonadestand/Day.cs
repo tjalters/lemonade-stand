@@ -10,7 +10,6 @@ namespace Lemonadestand
     {
         public Customers customers;
         public Weather weather;
-        //public List<string> myList;
         public int day = 1;
         public string forcast;
         public int currentDay;
@@ -115,6 +114,10 @@ namespace Lemonadestand
             //cups sold * price per cup
         }
         public void DisplayRemainingBalance()
+        {
+
+        }
+        public void GenerateCustomers()
         {
 
         }
