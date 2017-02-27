@@ -34,7 +34,6 @@ namespace Lemonadestand
       
             
            
-               //else Console.WriteLine("Insufficient funds");
             
             
         

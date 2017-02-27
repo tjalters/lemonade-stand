@@ -17,6 +17,8 @@ namespace Lemonadestand
         public int amountCupsSugarPerPitcher;
         public int amountOfIceCubesPerPitcher;
         public int numberOfCups;
+        public int cupsOfSugar;
+        public int iceCubes;
         public decimal amountToSubtract;
         public List<Lemon> lemon;
         public List<Cups> cups;
@@ -50,16 +52,7 @@ namespace Lemonadestand
             //}
 
         }
-
-        //public double TotalLemonsInInventory(int storedLemons, int numberOfLemons)
-        //{
-        //lemons = storedLemons;
-        //addedLemons = numberofLemons;
-        //result = lemons + addedLemons;
-        //return result;
-
-        //}
-
+        
 
         public void AddLemonsToInventory(int numberOfLemons)
         {

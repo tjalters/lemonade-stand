@@ -246,6 +246,22 @@ namespace Lemonadestand
                     break;
             }
         }
+        public void SellOneCup()
+        {
+            DecrementInventory();
+            IncrementBalance();
+        }
+        public void DecrementInventory()
+        {
+            inventory.cups.RemoveAt(0);
+            inventory.sugar.RemoveAt(0);
+            inventory.lemon.RemoveAt(0);
+            inventory.ice.RemoveAt(0);
+        }
+        public void IncrementBalance()
+        {
+           wallet.AddToBalance(0);
+        }
 
      }
 }

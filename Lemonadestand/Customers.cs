@@ -21,7 +21,7 @@ namespace Lemonadestand
 
         public Customers()
         {
-            //can I use
+            
         }
 
         //public bool AthletesBuy(int dailyDemand)
@@ -35,13 +35,20 @@ namespace Lemonadestand
         public void BuyCup(Player player)
         {
             customers = new List<Customers>();
+            CheckIfWillBuy(player, demandLevel);
             player.wallet.balance += pricePerCup;
             player.inventory.cups.RemoveAt(0);
-        }
+                
+            
+
+
+         
+    }
         public virtual void CheckIfWillBuy(Player player, double demandLevel)
         {
-
+            
         }
+       
 
 
 

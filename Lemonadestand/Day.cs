@@ -27,8 +27,9 @@ namespace Lemonadestand
         public string realForecast;
         public int amountOfCupsPerPitcher = 10;
         public int pricePerCup;
+        public bool cupPurchased;
 
-        public object RemoveLemonsFromInventory { get; private set; }
+        //public object RemoveLemonsFromInventory { get; private set; }
 
         public Day()
         {
@@ -42,7 +43,7 @@ namespace Lemonadestand
         {
             Console.WriteLine("Day {0}", day++);
         }
-
+        
         public void DisplayRandomDailyWeather()
         {
             //List<string> myList = new List<string> { "sunny", "cloudy", "rainy", "storming" };
@@ -113,6 +114,7 @@ namespace Lemonadestand
         }
         public void DisplayCupsSoldForDay()
         {
+           // Console.WriteLine("You sold {0} cups today.");
 
         }
         public void DisplayNetProfitForDay()
@@ -135,7 +137,7 @@ namespace Lemonadestand
         }
         public void GenerateHealthyCustomers()
         {
-            for(int i = 0; i == 10; i++)
+            for(int i = 0; i <= 10; i++)
             {
                 Healthy healthy = new Healthy();
                 customers.Add(healthy);
@@ -143,7 +145,7 @@ namespace Lemonadestand
         }
         public void GenerateAthleteCustomers()
         {
-            for(int i = 0; i == 10; i++)
+            for(int i = 0; i <= 10; i++)
             {
                 Athletes athletes = new Athletes();
                 customers.Add(athletes);
@@ -151,7 +153,7 @@ namespace Lemonadestand
         }
         public void GenerateAnytimerCustomers()
         {
-            for(int i = 0; i == 10; i++)
+            for(int i = 0; i <= 10; i++)
             {
                 Anytimers anytimers = new Anytimers();
                 customers.Add(anytimers);
@@ -159,7 +161,7 @@ namespace Lemonadestand
         }
         public void GenerateSweetToothCustomers()
         {
-            for(int i = 0; i == 10; i++)
+            for(int i = 0; i <= 10; i++)
             {
                 SweetTooth sweetTooth = new SweetTooth();
                 customers.Add(sweetTooth);
@@ -167,7 +169,7 @@ namespace Lemonadestand
         }
         public void GenerateSunnyCustomers()
         {
-            for(int i = 0; i == 10; i++)
+            for(int i = 0; i <= 10; i++)
             {
                 SunnyCustomer sunnyCustomer = new SunnyCustomer();
                 customers.Add(sunnyCustomer);
@@ -175,7 +177,7 @@ namespace Lemonadestand
         }
         public void GenerateStingyCustomers()
         {
-            for(int i = 0; i == 10; i++)
+            for(int i = 0; i <= 10; i++)
             {
                 Stingy stingy = new Stingy();
                 customers.Add(stingy);
@@ -185,28 +187,28 @@ namespace Lemonadestand
         {
             foreach(Customers customer in customers)
             {
-                customer.CheckIfWillBuy(player, weather.demandLevel);
+                
+                GenerateCustomers();
                 customer.BuyCup(player);
             }
         }
-        public void RunLemonadeStand()
+        public void DetermineNumberCupsBoughtForDay()
         {
 
         }
-       
-       // public void MakePitcher()
-       // {
-            //for(int i = 0; i <= 0; i++)
-            //inventory.lemon.RemoveAt(0);
-            //inventory.sugar.RemoveAt(0);
-            //inventory.ice.RemoveAt(0);
-
+        public void CheckSaleCriteria()
+        {
             
-        //}
-        
-            //public void PourPitcher(Player player)
-            //{
-            //  player.numberOfLemons.RemoveAt(0);
-         //}
         }
+  
+    
+
+        }
+      
+        
+        
+        
+        
+         
+        
 }
